@@ -1,3 +1,6 @@
+body{
+    font-family: sans-serif;
+}
 .clock{
     width: 400px;
     height: 400px;
@@ -21,6 +24,7 @@
     top: calc(50% - 120px);
     transform-origin: 50% 120px;
     /* transform: rotate(30deg); */
+    z-index: 1;
     
 }
 .clock .clock-m{
@@ -50,4 +54,34 @@
     left: calc(50% - 16px);
     border-radius: 50%;
     z-index: 3;
+}
+.day{
+    background-color: rgb(222, 225, 231);
+    width: 90px;
+    height: 50px;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    border-radius: 5px;
+    top: calc(50% - 25px);
+    left: calc(50% + 50px);
+    
+    color: rgba(0, 0, 0, 0.705);
+    font-size: 30px;
+    font-weight: bold;
+    border: 1px rgba(0, 0, 0, 0.712) solid;
+
+}
+.named{
+    position: absolute;
+    top: calc(50% - 40px);
+    left: calc(50% + 50px);
+    font-size: 12px;
+    width: 90px;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 5px;
+    box-sizing: border-box;
 }
