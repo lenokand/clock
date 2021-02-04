@@ -25,8 +25,8 @@ function day() {
     let d = now.getDay()
 
     let year = ['jan',
-                'fab',
-                'mch',
+                'feb',
+                'mar',
                 'apr', 
                 'may',
                 'jun',
