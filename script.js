@@ -61,10 +61,11 @@ function day() {
     // console.log(d, mth)
 
     // 4 способ
-    mth = year[mth]
     console.log(mth, year[mth])
+    // mth = year[mth]
+
     
-    dateblock.textContent = `${(d < 10) ? '0' +d : d} ${mth}`
+    dateblock.textContent = `${(d < 10) ? '0' +d : d} ${year[mth]}`
 
     setTimeout(day, 1000)
 }
