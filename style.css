@@ -25,6 +25,7 @@ body{
     transform-origin: 50% 120px;
     /* transform: rotate(30deg); */
     z-index: 1;
+    opacity: 0.95;
     
 }
 .clock .clock-m{
