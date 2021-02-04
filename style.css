@@ -85,3 +85,18 @@ body{
     padding: 0 5px;
     box-sizing: border-box;
 }
+
+@media screen and (max-width:576px){
+    .clock{
+        width: 350px;
+        height: 350px;}
+
+    .day{
+    width: 70px;
+    height: 40px;
+    font-size: 18px;
+    }
+    .named{
+       font-size: 10px;
+        width: 70px;}
+}
