@@ -22,7 +22,7 @@ function clock() {
 function day() {
     let now = new Date()
     let mth = now.getMonth()
-    let d = now.getDay()
+    let d = now.getDate()
 
     let year = ['jan',
                 'feb',
@@ -61,11 +61,11 @@ function day() {
     // console.log(d, mth)
 
     // 4 способ
-    console.log(mth, year[mth])
+    console.log(d, mth, year[mth])
     // mth = year[mth]
 
     
-    dateblock.textContent = `${(d < 10) ? '0' +d : d} ${year[mth]}`
+    dateblock.textContent = `${(d < 10) ? '0' + d : d} ${year[mth]}`
 
     setTimeout(day, 1000)
 }
